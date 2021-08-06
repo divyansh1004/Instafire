@@ -20,6 +20,7 @@ class PostsAdapter(val context: Context, val posts: List<Post>) :
         return ViewHolder(view)
 
     }
+    // this uses binding function for viewing and posting
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(posts[position])
